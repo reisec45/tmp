@@ -1,0 +1,12 @@
+     1                                  global start
+     2                                  
+     3                                  start:
+     4 00000000 66B801000000              mov eax, 1
+     5 00000006 66BE02000000              mov esi, 2
+     6 0000000C 6601F0                    add eax, esi
+     7 0000000F EB00                      jmp exit
+     8                                  exit:
+     9 00000011 66B83C000000              mov eax, 0x3c
+    10 00000017 0F05                      syscall
+    11                                  
+    12                                  

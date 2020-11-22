@@ -1,0 +1,76 @@
+URxvt.termName:rxvt-256color
+URxvt.geometry:             96x32
+URxvt.scrollBar:  false
+!URxvt.scrollBar_right:      true
+!URxvt.scrollBar_floating:   true
+!URxvt.scrollstyle:          plain
+URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      false
+URxvt.visualBell:           true
+URxvt.fading: 15
+URxvt.saveLines: 3000
+URxvt.perl-ext-common: xim-onthespot,selection-to-clipboard,clipboard,keyboard-select,ibeamcursor
+URxvt.iso14755: false
+URxvt.iso14755_52:false
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+URxvt.keysym.M-q: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.inputMethod: fcitx
+URxvt.preeditType: OnTheSpot,OverTheSpot,Root
+
+!URxvt.font:         xft:Ricty Diminished for Powerline-13:antialias=true:minspace=false,xft:Go Mono for Powerline
+URxvt.font:         xft:HackGen35Console-Regular:size=12:antialias=true:minspace=false,xft:Go Mono for Powerline-12
+
+URxvt.boldFont:         xft:HackGen35Console-Regular:size=12:antialias=true:minspace=false,xft:Go Mono for Powerline-12
+
+!URxvt.boldFont:         xft:Ricty Diminished for Powerline-11:antialias=true,xft:xft:Go Mono for Powerline
+URxvt.depth:       32
+!URxvt*inheritPixmap: true
+!URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+!URxvt*.shading: 50
+! special
+*.foreground:  [90]#c6c8d1
+.cursorColor:  [90]#c6c8d1
+*.background:  #161821
+!*.background:  #1c1c1c
+
+! black
+*.color0:       [90]#161821
+*.color8:       [90]#6b7089
+
+! red
+*.color1:       [90]#e27878
+*.color9:       [90]#e98989
+
+! green
+*.color2:       [90]#b4be82
+*.color10:      [90]#c0ca8e
+
+! yellow
+*.color3:       [90]#e2a478
+*.color11:      [90]#e9b189
+
+! blue
+*.color4:       [90]#84a0c6
+*.color12:      [90]#91acd1
+
+! magenta
+*.color5:       [90]#a093c7
+*.color13:      [90]#ada0d3
+
+! cyan
+*.color6:       [90]#89b8c2
+*.color14:      [90]#95c4ce
+
+! white
+*.color7:       [90]#c6c8d1
+*.color15:      [90]#d2d4de
+
+URxvt*skipBuiltinGlyphs:    true

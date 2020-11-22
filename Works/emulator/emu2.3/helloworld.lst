@@ -1,0 +1,4 @@
+     1                                  [BITS 32]
+     2                                  start:
+     3 00000000 B829000000                      mov     eax, 41
+     4 00000005 EBF9                            jmp     short start

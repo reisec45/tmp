@@ -1,0 +1,101 @@
+0x4006fa: ret
+0x400660: repz ret
+0x400807: leave; ret
+0x400698: pop rbp; ret
+0x400873: pop rdi; ret
+0x400872: pop r15; ret
+0x40065f: add bl,dh; ret
+0x400806: add cl,cl; ret
+0x4005b3: add esp,0x8; ret
+0x4005b2: add rsp,0x8; ret
+0x40077f: nop; pop rbp; ret
+0x40085c: fmul [rax-0x7d]; ret
+0x400871: pop rsi; pop r15; ret
+0x400870: pop r14; pop r15; ret
+0x40065e: add [rax],al; repz ret
+0x40065d: add [rax],r8b; repz ret
+0x4006d5: nop [rax]; pop rbp; ret
+0x400802: mov eax,0x0; leave; ret
+0x400805: add [rax],al; leave; ret
+0x4005b0: call rax; add rsp,0x8; ret
+0x400696: add [rax],al; pop rbp; ret
+0x4006f7: add [rcx],al; pop rbp; ret
+0x400695: add [rax],r8b; pop rbp; ret
+0x400804: add [rax],al; add cl,cl; ret
+0x40087d: add [rax],al; add bl,dh; ret
+0x40065b: nop [rax+rax*1+0x0]; repz ret
+0x400885: sub esp,0x8; add rsp,0x8; ret
+0x400884: sub rsp,0x8; add rsp,0x8; ret
+0x40086f: pop rbp; pop r14; pop r15; ret
+0x40086e: pop r13; pop r14; pop r15; ret
+0x4006d3: jmp rax; nop [rax]; pop rbp; ret
+0x400877: nop cs:[rax+rax*1+0x0]; repz ret
+0x400693: nop [rax+rax*1+0x0]; pop rbp; ret
+0x40065a: hlt; nop [rax+rax*1+0x0]; repz ret
+0x40087c: add [rax],al; add [rax],al; repz ret
+0x400875: nop; nop cs:[rax+rax*1+0x0]; repz ret
+0x400803: add [rax],al; add [rax],al; leave; ret
+0x40086d: pop rsp; pop r13; pop r14; pop r15; ret
+0x40086c: pop r12; pop r13; pop r14; pop r15; ret
+0x400659: add ah,dh; nop [rax+rax*1+0x0]; repz ret
+0x4006f5: or [rax],esp; add [rcx],al; pop rbp; ret
+0x4005ad: shl [rdx+rax*1-0x1],0xd0; add rsp,0x8; ret
+0x400691: jmp rax; nop [rax+rax*1+0x0]; pop rbp; ret
+0x40087b: add [rax],al; add [rax],al; add bl,dh; ret
+0x400882: add [rax],al; sub rsp,0x8; add rsp,0x8; ret
+0x40077a: call 0x400620 <setvbuf@plt>; nop; pop rbp; ret
+0x400658: and [rax],al; hlt; nop [rax+rax*1+0x0]; repz ret
+0x40086b: pop rbp; pop r12; pop r13; pop r14; pop r15; ret
+0x4006f8: add [rbp-0x3d],ebx; nop [rax+rax*1+0x0]; repz ret
+0x4007fd: call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4005ae: je 0x4005b2 <_init+18>; call rax; add rsp,0x8; ret
+0x4006d0: adc [rax+0x0],ah; jmp rax; nop [rax]; pop rbp; ret
+0x4006ce: mov edi,0x601058; jmp rax; nop [rax]; pop rbp; ret
+0x40087a: test [rax],al; add [rax],al; add [rax],al; repz ret
+0x400655: adc eax,0x200996; hlt; nop [rax+rax*1+0x0]; repz ret
+0x400657: or [rax],esp; add ah,dh; nop [rax+rax*1+0x0]; repz ret
+0x400869: or [rbx+0x5d],bl; pop r12; pop r13; pop r14; pop r15; ret
+0x4006cf: pop rax; adc [rax+0x0],ah; jmp rax; nop [rax]; pop rbp; ret
+0x4006cd: pop rbp; mov edi,0x601058; jmp rax; nop [rax]; pop rbp; ret
+0x4006f2: mov [rip+0x20098f],0x1 # 0x601088 <completed>; pop rbp; ret
+0x400778: mov edi,eax; call 0x400620 <setvbuf@plt>; nop; pop rbp; ret
+0x400777: mov rdi,rax; call 0x400620 <setvbuf@plt>; nop; pop rbp; ret
+0x40068e: adc [rax+0x0],ah; jmp rax; nop [rax+rax*1+0x0]; pop rbp; ret
+0x40068c: mov edi,0x601058; jmp rax; nop [rax+rax*1+0x0]; pop rbp; ret
+0x4005aa: add [rax-0x7b],cl; shl [rdx+rax*1-0x1],0xd0; add rsp,0x8; ret
+0x400653: add bh,bh; adc eax,0x200996; hlt; nop [rax+rax*1+0x0]; repz ret
+0x4006f6: and [rax],al; add [rbp-0x3d],ebx; nop [rax+rax*1+0x0]; repz ret
+0x4007fb: add [rax],al; call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4007f8: cmp eax,0xb2; call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4005ac: test eax,eax; je 0x4005b2 <_init+18>; call rax; add rsp,0x8; ret
+0x4005ab: test rax,rax; je 0x4005b2 <_init+18>; call rax; add rsp,0x8; ret
+0x400652: add dil,dil; adc eax,0x200996; hlt; nop [rax+rax*1+0x0]; repz ret
+0x400654: call [rip+0x200996] # 0x600ff0; hlt; nop [rax+rax*1+0x0]; repz ret
+0x4006f3: add eax,0x20098f; add [rbp-0x3d],ebx; nop [rax+rax*1+0x0]; repz ret
+0x400656: xchg esi,eax; or [rax],esp; add ah,dh; nop [rax+rax*1+0x0]; repz ret
+0x40068d: pop rax; adc [rax+0x0],ah; jmp rax; nop [rax+rax*1+0x0]; pop rbp; ret
+0x40068b: pop rbp; mov edi,0x601058; jmp rax; nop [rax+rax*1+0x0]; pop rbp; ret
+0x40064f: mov [rdx-0xffbff9],0x20099615; add ah,dh; nop [rax+rax*1+0x0]; repz ret
+0x400772: mov esi,0x0; mov rdi,rax; call 0x400620 <setvbuf@plt>; nop; pop rbp; ret
+0x400775: add [rax],al; mov rdi,rax; call 0x400620 <setvbuf@plt>; nop; pop rbp; ret
+0x4005a8: or ah,[rax]; add [rax-0x7b],cl; shl [rdx+rax*1-0x1],0xd0; add rsp,0x8; ret
+0x4007f9: mov dl,0x0; add [rax],al; call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4006f1: inc esi; add eax,0x20098f; add [rbp-0x3d],ebx; nop [rax+rax*1+0x0]; repz ret
+0x400771: add [rsi+0x0],bh; mov rdi,rax; call 0x400620 <setvbuf@plt>; nop; pop rbp; ret
+0x4005a9: and [rax],al; test rax,rax; je 0x4005b2 <_init+18>; call rax; add rsp,0x8; ret
+0x4007f7: lea edi,[rip+0xb2] # 0x4008af; call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4007f6: lea rdi,[rip+0xb2] # 0x4008af; call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4005a6: add eax,0x200a4d; test rax,rax; je 0x4005b2 <_init+18>; call rax; add rsp,0x8; ret
+0x4005a7: rex.WRB or r12b,[r8]; add [rax-0x7b],cl; shl [rdx+rax*1-0x1],0xd0; add rsp,0x8; ret
+0x40064e: mov edi,0x400782; call [rip+0x200996] # 0x600ff0; hlt; nop [rax+rax*1+0x0]; repz ret
+0x40064d: mov rdi,0x400782; call [rip+0x200996] # 0x600ff0; hlt; nop [rax+rax*1+0x0]; repz ret
+0x40064c: add [rax-0x39],cl; mov [rdx-0xffbff9],0x20099615; add ah,dh; nop [rax+rax*1+0x0]; repz ret
+0x4007f5: or al,0x48; lea edi,[rip+0xb2] # 0x4008af; call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4006ed: call 0x400670 <deregister_tm_clones>; mov [rip+0x20098f],0x1 # 0x601088 <completed>; pop rbp; ret
+0x4005a5: mov eax,[rip+0x200a4d] # 0x600ff8; test rax,rax; je 0x4005b2 <_init+18>; call rax; add rsp,0x8; ret
+0x4005a4: mov rax,[rip+0x200a4d] # 0x600ff8; test rax,rax; je 0x4005b2 <_init+18>; call rax; add rsp,0x8; ret
+0x40064a: or [rax+0x0],al; mov rdi,0x400782; call [rip+0x200996] # 0x600ff0; hlt; nop [rax+rax*1+0x0]; repz ret
+0x4007f4: jmp 0x400802 <main+128>; lea rdi,[rip+0xb2] # 0x4008af; call 0x4005d0 <puts@plt>; mov eax,0x0; leave; ret
+0x4006eb: mov ebp,esp; call 0x400670 <deregister_tm_clones>; mov [rip+0x20098f],0x1 # 0x601088 <completed>; pop rbp; ret
+0x4006ea: mov rbp,rsp; call 0x400670 <deregister_tm_clones>; mov [rip+0x20098f],0x1 # 0x601088 <completed>; pop rbp; ret
+0x4006e9: push rbp; mov rbp,rsp; call 0x400670 <deregister_tm_clones>; mov [rip+0x20098f],0x1 # 0x601088 <completed>; pop rbp; ret

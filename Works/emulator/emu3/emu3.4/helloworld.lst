@@ -1,0 +1,19 @@
+     1                                  [BITS 32]
+     2                                          org     0x7c00
+     3 00000000 83EC10                          sub     esp, 16
+     4 00000003 89E5                            mov     ebp, esp
+     5 00000005 B802000000                      mov     eax, 2
+     6 0000000A 8B0B                            mov     ecx, [ebx]
+     7 0000000C C7450405000000                  mov     dword [ebp + 4], 5
+     8 00000013 014504                          add     dword [ebp + 4], eax
+     9 00000016 8B7504                          mov     esi, [ebp + 4]
+    10 00000019 FF4504                          inc     dword [ebp + 4]
+    11 0000001C 8B7D04                          mov     edi, [ebp + 4]
+    12 0000001F C7042401000000                  mov     dword [esp], 0x01 
+    13 00000026 8B0424                          mov     eax, dword [esp]
+    14 00000029 B8FEFFFFFF                      mov     eax, -2
+    15 0000002E 83E8FE                          sub     eax, -2
+    16 00000031 89C3                            mov     ebx, eax
+    17                                  
+    18                                  ; mov     eax, dword [eip]
+    19 00000033 E9(00000000)                    jmp     0

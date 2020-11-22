@@ -1,0 +1,73 @@
+[   171.584] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[   171.587] 
+X.Org X Server 1.20.9
+X Protocol Version 11, Revision 0
+[   171.590] Build Operating System: Linux Manjaro Linux
+[   171.591] Current Operating System: Linux krcy-pc 5.2.21-1-MANJARO #1 SMP PREEMPT Sat Oct 12 11:09:56 UTC 2019 x86_64
+[   171.591] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.2-x86_64 root=UUID=ce13b906-b715-4f67-9a0b-db7cbd2a5abd rw quiet resume=UUID=3abb9295-74d6-4d3c-b47f-a579111f314e udev.log_priority=3
+[   171.596] Build Date: 17 November 2020  03:15:53PM
+[   171.599]  
+[   171.600] Current version of pixman: 0.38.4
+[   171.603] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   171.603] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   171.611] (==) Log file: "/home/krcy/.local/share/xorg/Xorg.1.log", Time: Mon Nov 23 01:18:03 2020
+[   171.613] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   171.614] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   171.614] (==) No Layout section.  Using the first Screen section.
+[   171.614] (==) No screen section available. Using defaults.
+[   171.614] (**) |-->Screen "Default Screen Section" (0)
+[   171.614] (**) |   |-->Monitor "<default monitor>"
+[   171.615] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   171.615] (==) Automatically adding devices
+[   171.615] (==) Automatically enabling devices
+[   171.615] (==) Automatically adding GPU devices
+[   171.615] (==) Automatically binding GPU devices
+[   171.615] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   171.615] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[   171.615] 	Entry deleted from font path.
+[   171.615] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[   171.615] 	Entry deleted from font path.
+[   171.615] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[   171.615] 	Entry deleted from font path.
+[   171.615] (==) FontPath set to:
+	/usr/share/fonts/misc,
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/OTF
+[   171.615] (==) ModulePath set to "/usr/lib/xorg/modules"
+[   171.615] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[   171.615] (II) Module ABI versions:
+[   171.615] 	X.Org ANSI C Emulation: 0.4
+[   171.615] 	X.Org Video Driver: 24.1
+[   171.615] 	X.Org XInput driver : 24.1
+[   171.615] 	X.Org Server Extension : 10.0
+[   171.618] (++) using VT number 2
+
+[   171.627] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[   171.630] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   171.630] (II) Platform probe for /sys/devices/pci0000:00/0000:00:0f.0/drm/card0
+[   171.632] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
+[   171.652] (--) PCI:*(0@0:15:0) 15ad:0405:15ad:0405 rev 0, Mem @ 0xf0000000/134217728, 0xfb800000/8388608, I/O @ 0x00002140/16, BIOS @ 0x????????/131072
+[   171.652] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[   171.652] (II) LoadModule: "glx"
+[   171.652] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   171.657] (II) Module glx: vendor="X.Org Foundation"
+[   171.657] 	compiled for 1.20.9, module version = 1.0.0
+[   171.657] 	ABI class: X.Org Server Extension, version 10.0
+[   171.657] (==) Matched vmware as autoconfigured driver 0
+[   171.657] (==) Matched modesetting as autoconfigured driver 1
+[   171.657] (==) Matched fbdev as autoconfigured driver 2
+[   171.657] (==) Matched vesa as autoconfigured driver 3
+[   171.657] (==) Assigned the driver to the xf86ConfigLayout
+[   171.657] (II) LoadModule: "vmware"
+[   171.658] (II) Loading /usr/lib/xorg/modules/drivers/vmware_drv.so
+[   171.659] (EE) Failed to load /usr/lib/xorg/modules/drivers/vmware_drv.so: libicuuc.so.65: cannot open shared object file: No such file or directory
+[   171.659] (EE) Failed to load module "vmware" (loader failed, 0)
+[   171.659] (II) LoadModule: "modesetting"
+[   171.659] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[   171.660] (EE) 
+[   171.660] (EE) Backtrace:

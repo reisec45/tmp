@@ -1,0 +1,21 @@
+     1                                  [BITS 32]
+     2                                          org     0x7c00
+     3                                  start:
+     4 00000000 BE[22000000]                    mov     esi, msg
+     5 00000005 E805000000                      call    puts
+     6 0000000A E9(00000000)                    jmp     0
+     7                                  puts:
+     8 0000000F 8A06                            mov     al, [esi]
+     9 00000011 46                              inc     esi
+    10 00000012 3C00                            cmp     al, 0
+    11 00000014 740B                            je      puts_end
+    12 00000016 B40E                            mov     ah, 0x0e
+    13 00000018 BB03000000                      mov     ebx, 3
+    14 0000001D CD10                            int     0x10
+    15 0000001F EBEE                            jmp     puts
+    16                                  puts_end:
+    17 00000021 C3                              ret
+    18                                  msg:
+    19 00000022 68656C6C6F2C20776F-             db      "hello, world", 0x0D, 0x0A, 0
+    19 0000002B 726C640D0A00       
+    20                                  

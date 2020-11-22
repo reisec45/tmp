@@ -1,0 +1,77 @@
+[   209.104] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[   209.106] 
+X.Org X Server 1.20.6
+X Protocol Version 11, Revision 0
+[   209.106] Build Operating System: Linux Arch Linux
+[   209.106] Current Operating System: Linux krcy-pc 5.2.21-1-MANJARO #1 SMP PREEMPT Sat Oct 12 11:09:56 UTC 2019 x86_64
+[   209.106] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.2-x86_64 root=UUID=ce13b906-b715-4f67-9a0b-db7cbd2a5abd rw quiet resume=UUID=3abb9295-74d6-4d3c-b47f-a579111f314e udev.log_priority=3
+[   209.107] Build Date: 23 November 2019  08:58:32AM
+[   209.107]  
+[   209.107] Current version of pixman: 0.38.4
+[   209.107] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   209.107] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   209.107] (==) Log file: "/home/krcy/.local/share/xorg/Xorg.0.log", Time: Mon Nov 23 01:06:07 2020
+[   209.108] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   209.108] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   209.108] (==) No Layout section.  Using the first Screen section.
+[   209.108] (==) No screen section available. Using defaults.
+[   209.108] (**) |-->Screen "Default Screen Section" (0)
+[   209.108] (**) |   |-->Monitor "<default monitor>"
+[   209.108] (==) No device specified for screen "Default Screen Section".
+	Using the first device section listed.
+[   209.108] (**) |   |-->Device "intel Graphics"
+[   209.108] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   209.108] (==) Automatically adding devices
+[   209.108] (==) Automatically enabling devices
+[   209.108] (==) Automatically adding GPU devices
+[   209.108] (==) Automatically binding GPU devices
+[   209.108] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   209.108] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[   209.108] 	Entry deleted from font path.
+[   209.109] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[   209.109] 	Entry deleted from font path.
+[   209.109] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[   209.109] 	Entry deleted from font path.
+[   209.109] (==) FontPath set to:
+	/usr/share/fonts/misc,
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/OTF
+[   209.109] (==) ModulePath set to "/usr/lib/xorg/modules"
+[   209.109] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[   209.109] (II) Module ABI versions:
+[   209.109] 	X.Org ANSI C Emulation: 0.4
+[   209.109] 	X.Org Video Driver: 24.0
+[   209.109] 	X.Org XInput driver : 24.1
+[   209.109] 	X.Org Server Extension : 10.0
+[   209.112] (++) using VT number 2
+
+[   209.120] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[   209.122] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   209.125] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
+[   209.138] (--) PCI:*(0@0:15:0) 15ad:0405:15ad:0405 rev 0, Mem @ 0xf0000000/134217728, 0xfb800000/8388608, I/O @ 0x00002140/16, BIOS @ 0x????????/131072
+[   209.138] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[   209.138] (II) LoadModule: "glx"
+[   209.138] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   209.141] (II) Module glx: vendor="X.Org Foundation"
+[   209.141] 	compiled for 1.20.6, module version = 1.0.0
+[   209.141] 	ABI class: X.Org Server Extension, version 10.0
+[   209.141] (II) LoadModule: "intel"
+[   209.141] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[   209.141] (EE) Failed to load /usr/lib/xorg/modules/drivers/intel_drv.so: /usr/lib/libc.so.6: version `GLIBC_2.32' not found (required by /usr/lib/xorg/modules/drivers/intel_drv.so)
+[   209.141] (EE) Failed to load module "intel" (loader failed, 0)
+[   209.141] (EE) No drivers available.
+[   209.141] (EE) 
+Fatal server error:
+[   209.141] (EE) no screens found(EE) 
+[   209.142] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[   209.142] (EE) Please also check the log file at "/home/krcy/.local/share/xorg/Xorg.0.log" for additional information.
+[   209.142] (EE) 
+[   209.150] (EE) Server terminated with error (1). Closing log file.
