@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1606091087,,"wq"
 :q!
 |2,0,1606084671,,"q!"
 :q
 |2,0,1606084668,,"q"
-:wq
-|2,0,1606084664,,"wq"
 :%!xxd -r
 |2,0,1603802272,,"%!xxd -r"
 :%!xxd
@@ -265,34 +265,46 @@ $
 |3,0,36,0,1,0,1606027589,">"
 
 # File marks:
-'0  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
-|4,48,1,0,1606084671,"/etc/X11/xorg.conf.d/90-mhwd.conf"
-'1  1  0  /etc/X11/xorg.conf.d/90
-|4,49,1,0,1606084656,"/etc/X11/xorg.conf.d/90"
-'2  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
-|4,50,1,0,1606084619,"/etc/X11/xorg.conf.d/90-mhwd.conf"
-'3  15  0  ~/.Xresources
-|4,51,15,0,1606031602,"~/.Xresources"
-'4  4  0  ~/.vimrc
-|4,52,4,0,1606031482,"~/.vimrc"
-'5  1  0  ~/.Xresources
-|4,53,1,0,1606031424,"~/.Xresources"
+'0  1  16  ~/.gitignore
+|4,48,1,16,1606091087,"~/.gitignore"
+'1  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
+|4,49,1,0,1606084671,"/etc/X11/xorg.conf.d/90-mhwd.conf"
+'2  1  0  /etc/X11/xorg.conf.d/90
+|4,50,1,0,1606084656,"/etc/X11/xorg.conf.d/90"
+'3  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
+|4,51,1,0,1606084619,"/etc/X11/xorg.conf.d/90-mhwd.conf"
+'4  15  0  ~/.Xresources
+|4,52,15,0,1606031602,"~/.Xresources"
+'5  4  0  ~/.vimrc
+|4,53,4,0,1606031482,"~/.vimrc"
 '6  1  0  ~/.Xresources
 |4,54,1,0,1606031424,"~/.Xresources"
-'7  34  0  ~/.vimrc
-|4,55,34,0,1606031305,"~/.vimrc"
+'7  1  0  ~/.Xresources
+|4,55,1,0,1606031424,"~/.Xresources"
 '8  34  0  ~/.vimrc
 |4,56,34,0,1606031305,"~/.vimrc"
-'9  8  0  ~/.vimrc
-|4,57,8,0,1606028569,"~/.vimrc"
+'9  34  0  ~/.vimrc
+|4,57,34,0,1606031305,"~/.vimrc"
 
 # Jumplist (newest first):
+-'  1  16  ~/.gitignore
+|4,39,1,16,1606091087,"~/.gitignore"
+-'  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
+|4,39,1,0,1606084671,"/etc/X11/xorg.conf.d/90-mhwd.conf"
 -'  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
 |4,39,1,0,1606084671,"/etc/X11/xorg.conf.d/90-mhwd.conf"
 -'  1  0  /etc/X11/xorg.conf.d/90
 |4,39,1,0,1606084656,"/etc/X11/xorg.conf.d/90"
 -'  1  0  /etc/X11/xorg.conf.d/90
 |4,39,1,0,1606084656,"/etc/X11/xorg.conf.d/90"
+-'  1  0  /etc/X11/xorg.conf.d/90
+|4,39,1,0,1606084656,"/etc/X11/xorg.conf.d/90"
+-'  1  0  /etc/X11/xorg.conf.d/90
+|4,39,1,0,1606084656,"/etc/X11/xorg.conf.d/90"
+-'  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
+|4,39,1,0,1606084619,"/etc/X11/xorg.conf.d/90-mhwd.conf"
+-'  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
+|4,39,1,0,1606084619,"/etc/X11/xorg.conf.d/90-mhwd.conf"
 -'  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
 |4,39,1,0,1606084619,"/etc/X11/xorg.conf.d/90-mhwd.conf"
 -'  1  0  /etc/X11/xorg.conf.d/90-mhwd.conf
@@ -313,6 +325,38 @@ $
 |4,39,15,0,1606031602,"~/.Xresources"
 -'  15  0  ~/.Xresources
 |4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  15  0  ~/.Xresources
+|4,39,15,0,1606031602,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1606031544,"~/.Xresources"
 -'  1  0  ~/.Xresources
 |4,39,1,0,1606031544,"~/.Xresources"
 -'  1  0  ~/.Xresources
@@ -361,6 +405,38 @@ $
 |4,39,4,0,1606031482,"~/.vimrc"
 -'  4  0  ~/.vimrc
 |4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1606031482,"~/.vimrc"
 -'  1  0  ~/.vimrc
 |4,39,1,0,1606031474,"~/.vimrc"
 -'  1  0  ~/.vimrc
@@ -393,102 +469,33 @@ $
 |4,39,1,0,1606031474,"~/.vimrc"
 -'  1  0  ~/.vimrc
 |4,39,1,0,1606031474,"~/.vimrc"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1606031424,"~/.Xresources"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
--'  34  0  ~/.vimrc
-|4,39,34,0,1606031305,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1606031474,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1606091086	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
 
 > /etc/X11/xorg.conf.d/90-mhwd.conf
 	*	1606084664	0
@@ -2457,13 +2464,3 @@ $
 > ~/Works/hutsu_linux/cat.c
 	*	1600670138	0
 	"	1	0
-
-> ~/Works/hutsu_linux/.gitignore
-	*	1600616131	0
-	"	8	7
-	^	8	8
-	.	8	7
-	+	2	3
-	+	7	0
-	+	2	2
-	+	8	7
